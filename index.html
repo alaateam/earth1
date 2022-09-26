@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+   <title>##</title>
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+    }
+     body{
+        display: flex;
+        background-color: #121212;
+        background: url(galaxy.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        overflow: hidden;
+        justify-content: center;
+        
+    }
+    h2{
+        position: relative;
+        font-size: 6em;
+        letter-spacing: 15px;
+        color: whitesmoke;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        -webkit-box-reflect: below 1px linear-gradient(transparent,#000);
+        line-height: 0.7em;
+        outline: none;
+        animation: animate 7s linear infinite;
+        margin-top: 580px;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    @keyframes animate{
+        0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+            color: #11809e;
+            box-shadow: none;
+        }
+       18.1%,20.1%,30%,50% ,60.1% ,65%,80.1%,90%,92.1%, 100%{
+            color:whitesmoke;
+            box-shadow: 0 0 10px #ffffffce,
+            0 0 20px #ffffffe1,
+            0 0 40px #ffffffd4,
+            0 0 80px #ffffffcc,
+            0 0 140px #ffffffe7;
+        }
+    }
+    section .ear{
+       
+       justify-content: center;
+       align-items: center;
+       transform-style: preserve-3d;
+   }
+    .earth{
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 300px;
+        height: 300px;
+        background:url(e.jpg);
+        background-repeat: repeat-x;
+        background-size: cover;
+        border-radius: 50%;
+        box-shadow: inset 0 0 20px rgba(0, 0, 0, 1) , 0 0 50px white;
+        animation: animateEarth 15s linear infinite;
+    }
+    @keyframes animateEarth{
+        0%{
+            background-position: 0 0;
+        }
+        100%{
+            background-position: -1280px 0;
+        }
+    }
+    </style>
+    </head>
+    <body>
+        <section class="ear">
+            <center>
+            <div class="earth"></div></center>
+          </section>
+
+
+         <a href="F:\map.html"> <h2 contenteditable="true">world</h2></a>
+    </body>
+    </html>
